@@ -1,7 +1,7 @@
-GCC
+clang
 ===
 
-This folder contains files and documentation for building and maintaining GCC on Cirrus.
+This folder contains files and documentation for building and maintaining clang on Cirrus.
 
 History
 -------
