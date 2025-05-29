@@ -1,4 +1,4 @@
-## Boris installation instructions
+## Boris installation instructions (29-05-25)
 
 You will first need to load all the dependencies, including openmpi, fftw and cuda.
 
@@ -10,21 +10,20 @@ module load oneapi
 module load tbb/2022.0
 ```
 
-Set a shell variable to identify the version and download the software
+Download the software from git and move in the code root directory.
 
 ```bash
 git clone https://github.com/SerbanL/BORIS.git
-cd BORIS
 ```
 
-You will need to modify the makefile, in order to build on Cirrus. You can copy the modified makefile in this folder into the root of the Boris2 source code.
+You will need to modify the makefile, in order to build on Cirrus. You can find an adapted makefile in this folder. You will need to copy it to the code source directory.
 
 ```bash
 cp makefile  BORIS
 ```
 
 Finally you can compile the source using make. You will need to specify the root location of cuda and the root of the python environment.
-Below an example corresponding do the modules loaded above on the 29th of May 2025.
+Below an example corresponding do the modules loaded above.
 
 ```bash
 cd BORIS
